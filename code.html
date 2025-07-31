@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="google-site-verification" content="7rsmnVNsyabzoieiWeNFMdb02Lzc2exU5PAPJMvkIIw" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shani Digital Work | Creative Design Solutions</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        :root {
+            --primary: #6C63FF;
+            --secondary: #FF6584;
+            --dark: #2D3748;
+            --light: #F7FAFC;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        .gradient-text {
+            background: linear-gradient(45deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+        }
+        
+        .portfolio-item:hover .portfolio-overlay {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .animated-heading {
+            overflow: hidden;
+            white-space: nowrap;
+            border-right: 3px solid var(--primary);
+            animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+        }
+        
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+        
+        @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: var(--primary) }
+        }
+        
+        .scroll-down {
+            animation: bounce 2s infinite;
+        }
+        
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-20px);
+            }
+            60% {
+                transform: translateY(-10px);
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white shadow-md z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold">
+                <span class="gradient-text">Shani Digital</span>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="text-gray-800 hover:text-purple-600 transition">Home</a>
+                <a href="#services" class="text-gray-800 hover:text-purple-600 transition">Services</a>
+                <a href="#portfolio" class="text-gray-800 hover:text-purple-600 transition">Portfolio</a>
+                <a href="#about" class="text-gray-800 hover:text-purple-600 transition">About</a>
+                <a href="#contact" class="text-gray-800 hover:text-purple-600 transition">Contact</a>
+            </div>
+            <button class="md:hidden focus:outline-none">
+                <i class="fas fa-bars text-2xl text-gray-800"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-32 pb-20 px-6 bg-gradient-to-b from-white to-gray-100">
+        <div class="container mx-auto flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-12 md:mb-0">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">
+                    <span class="animated-heading">Creative Design</span>
+                    <br>
+                    <span class="gradient-text">Solutions</span>
+                </h1>
+                <p class="text-lg text-gray-600 mb-8">
+                    We transform ideas into visually stunning designs that captivate and resonate with your audience. Let's bring your vision to life.
+                </p>
+                <div class="flex space-x-4">
+                    <a href="#contact" class="gradient-bg text-white px-8 py-3 rounded-lg font-medium hover:shadow-lg transition-all">Get Started</a>
+                    <a href="#portfolio" class="border border-gray-300 text-gray-700 px-8 py-3 rounded-lg font-medium hover:bg-gray-100 transition">View Work</a>
+                </div>
+            </div>
+            <div class="md:w-1/2">
+                <img src="https://placehold.co/800x600" alt="Creative designer working on digital illustration at modern workstation with multiple screens" class="rounded-lg shadow-xl" />
+            </div>
+        </div>
+        <div class="text-center mt-16 scroll-down">
+            <a href="#services" class="text-gray-500 hover:text-purple-600 transition">
+                <i class="fas fa-chevron-down text-3xl animate-bounce"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Our <span class="gradient-text">Services</span></h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">We offer a comprehensive range of design services to meet all your creative needs.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-gray-50 p-8 rounded-xl hover:shadow-lg transition-all border border-gray-100">
+                    <div class="w-16 h-16 gradient-bg rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-palette text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Brand Identity</h3>
+                    <p class="text-gray-600">
+                        We create memorable logos and comprehensive branding packages that perfectly represent your business and resonate with your audience.
+                    </p>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="bg-gray-50 p-8 rounded-xl hover:shadow-lg transition-all border border-gray-100">
+                    <div class="w-16 h-16 gradient-bg rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-laptop-code text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Web Design</h3>
+                    <p class="text-gray-600">
+                        Custom website designs that are visually stunning, user-friendly, and optimized for conversions across all devices.
+                    </p>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="bg-gray-50 p-8 rounded-xl hover:shadow-lg transition-all border border-gray-100">
+                    <div class="w-16 h-16 gradient-bg rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-mobile-alt text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">UI/UX Design</h3>
+                    <p class="text-gray-600">
+                        Intuitive interface designs with thoughtful user experiences that engage visitors and keep them coming back.
+                    </p>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="bg-gray-50 p-8 rounded-xl hover:shadow-lg transition-all border border-gray-100">
+                    <div class="w-16 h-16 gradient-bg rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-print text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Print Design</h3>
+                    <p class="text-gray-600">
+                        Eye-catching business cards, brochures, flyers, and other print materials that make a lasting physical impression.
+                    </p>
+                </div>
+                
+                <!-- Service 5 -->
+                <div class="bg-gray-50 p-8 rounded-xl hover:shadow-lg transition-all border border-gray-100">
+                    <div class="w-16 h-16 gradient-bg rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-ad text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Marketing Materials</h3>
+                    <p class="text-gray-600">
+                        Strategic social media graphics, banners, and ads that effectively communicate your message and drive engagement.
+                    </p>
+                </div>
+                
+                <!-- Service 6 -->
+                <div class="bg-gray-50 p-8 rounded-xl hover:shadow-lg transition-all border border-gray-100">
+                    <div class="w-16 h-16 gradient-bg rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-images text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Illustration</h3>
+                    <p class="text-gray-600">
+                        Custom illustrations and icon sets that add personality and visual interest to your brand and projects.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Our <span class="gradient-text">Portfolio</span></h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Explore some of our recent work and see the quality we deliver.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Portfolio Item 1 -->
+                <div class="portfolio-item relative rounded-xl overflow-hidden shadow-md">
+                    <img src="https://placehold.co/600x400" alt="Modern brand identity for a tech startup with minimalist logo and clean typography" class="w-full h-64 object-cover" />
+                    <div class="portfolio-overlay absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center text-center p-6 opacity-0 transition-all duration-300 transform translate-y-4">
+                        <h3 class="text-white text-xl font-bold mb-2">Tech Startup Branding</h3>
+                        <p class="text-gray-200 mb-4">Complete brand identity for a modern SaaS company</p>
+                        <a href="#" class="gradient-bg text-white px-6 py-2 rounded font-medium">View Project</a>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 2 -->
+                <div class="portfolio-item relative rounded-xl overflow-hidden shadow-md">
+                    <img src="https://placehold.co/600x400" alt="E-commerce website design with product showcase and shopping cart functionality" class="w-full h-64 object-cover" />
+                    <div class="portfolio-overlay absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center text-center p-6 opacity-0 transition-all duration-300 transform translate-y-4">
+                        <h3 class="text-white text-xl font-bold mb-2">E-commerce Website</h3>
+                        <p class="text-gray-200 mb-4">Complete redesign for boutique fashion store</p>
+                        <a href="#" class="gradient-bg text-white px-6 py-2 rounded font-medium">View Project</a>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 3 -->
+                <div class="portfolio-item relative rounded-xl overflow-hidden shadow-md">
+                    <img src="https://placehold.co/600x400" alt="Mobile app interface design with clean layouts and intuitive navigation" class="w-full h-64 object-cover" />
+                    <div class="portfolio-overlay absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center text-center p-6 opacity-0 transition-all duration-300 transform translate-y-4">
+                        <h3 class="text-white text-xl font-bold mb-2">Mobile App UI</h3>
+                        <p class="text-gray-200 mb-4">Fitness tracking application interface</p>
+                        <a href="#" class="gradient-bg text-white px-6 py-2 rounded font-medium">View Project</a>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 4 -->
+                <div class="portfolio-item relative rounded-xl overflow-hidden shadow-md">
+                    <img src="https://placehold.co/600x400" alt="Corporate brochure design with professional layout and high-quality imagery" class="w-full h-64 object-cover" />
+                    <div class="portfolio-overlay absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center text-center p-6 opacity-0 transition-all duration-300 transform translate-y-4">
+                        <h3 class="text-white text-xl font-bold mb-2">Corporate Brochure</h3>
+                        <p class="text-gray-200 mb-4">Annual report for financial institution</p>
+                        <a href="#" class="gradient-bg text-white px-6 py-2 rounded font-medium">View Project</a>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 5 -->
+                <div class="portfolio-item relative rounded-xl overflow-hidden shadow-md">
+                    <img src="https://placehold.co/600x400" alt="Social media campaign graphics with cohesive visual style and messaging" class="w-full h-64 object-cover" />
+                    <div class="portfolio-overlay absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center text-center p-6 opacity-0 transition-all duration-300 transform translate-y-4">
+                        <h3 class="text-white text-xl font-bold mb-2">Social Media Campaign</h3>
+                        <p class="text-gray-200 mb-4">Holiday promotion for retail brand</p>
+                        <a href="#" class="gradient-bg text-white px-6 py-2 rounded font-medium">View Project</a>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 6 -->
+                <div class="portfolio-item relative rounded-xl overflow-hidden shadow-md">
+                    <img src="https://placehold.co/600x400" alt="Set of custom illustrations with playful characters and vibrant colors" class="w-full h-64 object-cover" />
+                    <div class="portfolio-overlay absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center text-center p-6 opacity-0 transition-all duration-300 transform translate-y-4">
+                        <h3 class="text-white text-xl font-bold mb-2">Illustration Series</h3>
+                        <p class="text-gray-200 mb-4">Character designs for children's app</p>
+                        <a href="#" class="gradient-bg text-white px-6 py-2 rounded font-medium">View Project</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="gradient-bg text-white px-8 py-3 rounded-lg font-medium hover:shadow-lg transition-all inline-block">View All Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-12 md:mb-0 md:pr-12">
+                    <img src="https://placehold.co/600x600" alt="Professional designer working in a modern studio with multiple design tools and screens" class="rounded-lg shadow-lg" />
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">About <span class="gradient-text">Shani Digital</span></h2>
+                    <p class="text-gray-600 mb-6">
+                        Founded in 2018, Shani Digital Work is a creative design studio dedicated to helping businesses stand out through exceptional design. Our team of talented designers combines artistic vision with strategic thinking to create designs that not only look beautiful but also achieve real business results.
+                    </p>
+                    <p class="text-gray-600 mb-8">
+                        We believe in the power of collaboration, working closely with our clients to understand their goals, values, and audience. This approach allows us to create design solutions that are as unique as the businesses we work with.
+                    </p>
+                    <div class="flex flex-wrap mb-8">
+                        <div class="w-1/2 mb-4">
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 gradient-bg rounded-lg flex items-center justify-center mr-4">
+                                    <i class="fas fa-award text-white"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold">150+ Projects</h3>
+                                    <p class="text-gray-600 text-sm">Completed</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-1/2 mb-4">
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 gradient-bg rounded-lg flex items-center justify-center mr-4">
+                                    <i class="fas fa-smile text-white"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold">98%</h3>
+                                    <p class="text-gray-600 text-sm">Client Satisfaction</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-1/2 mb-4">
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 gradient-bg rounded-lg flex items-center justify-center mr-4">
+                                    <i class="fas fa-users text-white"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold">75+</h3>
+                                    <p class="text-gray-600 text-sm">Happy Clients</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-1/2 mb-4">
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 gradient-bg rounded-lg flex items-center justify-center mr-4">
+                                    <i class="fas fa-lightbulb text-white"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold">10+</h3>
+                                    <p class="text-gray-600 text-sm">Industries Served</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#contact" class="gradient-bg text-white px-8 py-3 rounded-lg font-medium hover:shadow-lg transition-all inline-block">Get In Touch</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-gradient-to-b from-gray-100 to-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Client <span class="gradient-text">Testimonials</span></h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">What our clients say about working with us.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-8 rounded-xl shadow-md">
+                    <div class="flex items-center mb-6">
+                        <img src="https://placehold.co/80x80" alt="Portrait of Sarah Johnson, Marketing Director at Tech Solutions Inc" class="w-16 h-16 rounded-full object-cover mr-4" />
+                        <div>
+                            <h3 class="font-bold">Sarah Johnson</h3>
+                            <p class="text-gray-600 text-sm">Marketing Director, Tech Solutions Inc</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic">
+                        "Working with Shani Digital transformed our brand identity completely. Their team understood our vision immediately and delivered designs that perfectly captured our company's personality and values."
+                    </p>
+                    <div class="flex mt-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-8 rounded-xl shadow-md">
+                    <div class="flex items-center mb-6">
+                        <img src="https://placehold.co/80x80" alt="Portrait of Michael Chen, Founder of Swift Retail" class="w-16 h-16 rounded-full object-cover mr-4" />
+                        <div>
+                            <h3 class="font-bold">Michael Chen</h3>
+                            <p class="text-gray-600 text-sm">Founder, Swift Retail</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic">
+                        "Our e-commerce site design by Shani Digital resulted in a 40% increase in conversions. Their attention to detail and user experience principles made all the difference. Highly recommend their services!"
+                    </p>
+                    <div class="flex mt-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-8 rounded-xl shadow-md">
+                    <div class="flex items-center mb-6">
+                        <img src="https://placehold.co/80x80" alt="Portrait of Emily Rodriguez, Creative Director at BrandWorks" class="w-16 h-16 rounded-full object-cover mr-4" />
+                        <div>
+                            <h3 class="font-bold">Emily Rodriguez</h3>
+                            <p class="text-gray-600 text-sm">Creative Director, BrandWorks</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic">
+                        "The branding package we received was comprehensive and exceeded our expectations. Shani Digital's team is professional, creative, and responsive. They've become our go-to design partner for all our projects."
+                    </p>
+                    <div class="flex mt-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-900 text-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Get In <span class="gradient-text">Touch</span></h2>
+                <p class="text-gray-300 max-w-2xl mx-auto">Ready to start your project? We'd love to hear from you.</p>
+            </div>
+            
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/2 mb-12 md:mb-0 md:pr-12">
+                    <h3 class="text-xl font-bold mb-6">Contact Information</h3>
+                    
+                    <div class="mb-8">
+                        <div class="flex items-start mb-6">
+                            <div class="w-12 h-12 gradient-bg rounded-lg flex items-center justify-center mr-4">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-1">Our Studio</h4>
+                                <p class="text-gray-300">Online Platform<br>Shani Digital<br>Work</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start mb-6">
+                            <div class="w-12 h-12 gradient-bg rounded-lg flex items-center justify-center mr-4">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-1">Email Us</h4>
+                                <p class="text-gray-300">hello@shanidigital.com<br>jobs@shanidigital.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 gradient-bg rounded-lg flex items-center justify-center mr-4">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-1">Call Us</h4>
+                                <p class="text-gray-300">+91 8810388973<br>Mon-Fri, 9am-5pm PST</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-xl font-bold mb-6">Follow Us</h3>
+                        <div class="flex space-x-4">
+                            <a href="#" class="w-12 h-12 border border-gray-700 rounded-full flex items-center justify-center hover:bg-gray-800 transition">
+                                <i class="fab fa-behance"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 border border-gray-700 rounded-full flex items-center justify-center hover:bg-gray-800 transition">
+                                <i class="fab fa-dribbble"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 border border-gray-700 rounded-full flex items-center justify-center hover:bg-gray-800 transition">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 border border-gray-700 rounded-full flex items-center justify-center hover:bg-gray-800 transition">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2">
+                    <form class="bg-gray-800 p-8 rounded-xl">
+                        <div class="mb-6">
+                            <label for="name" class="block text-gray-300 mb-2">Your Name</label>
+                            <input type="text" id="name" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 focus:outline-none focus:border-purple-500" placeholder="John Doe">
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="email" class="block text-gray-300 mb-2">Email Address</label>
+                            <input type="email" id="email" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 focus:outline-none focus:border-purple-500" placeholder="you@example.com">
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="phone" class="block text-gray-300 mb-2">Phone Number</label>
+                            <input type="tel" id="phone" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 focus:outline-none focus:border-purple-500" placeholder="+1 (555) 123-4567">
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="service" class="block text-gray-300 mb-2">Service Interest</label>
+                            <select id="service" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 focus:outline-none focus:border-purple-500">
+                                <option value="">Select a service</option>
+                                <option value="branding">Brand Identity</option>
+                                <option value="web">Web Design</option>
+                                <option value="uiux">UI/UX Design</option>
+                                <option value="print">Print Design</option>
+                                <option value="marketing">Marketing Materials</option>
+                                <option value="illustration">Illustration</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="message" class="block text-gray-300 mb-2">Your Message</label>
+                            <textarea id="message" rows="4" class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 focus:outline-none focus:border-purple-500" placeholder="Tell us about your project..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="gradient-bg text-white w-full py-3 rounded-lg font-medium hover:shadow-lg transition-all">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-950 text-gray-400 py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <div class="text-2xl font-bold mb-4">
+                        <span class="gradient-text">Shani Digital</span>
+                    </div>
+                    <p class="max-w-xs">Creative design solutions that help your business stand out and succeed.</p>
+                </div>
+                
+                <div class="mb-6 md:mb-0">
+                    <h3 class="font-bold text-white mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="hover:text-white transition">Home</a></li>
+                        <li><a href="#services" class="hover:text-white transition">Services</a></li>
+                        <li><a href="#portfolio" class="hover:text-white transition">Portfolio</a></li>
+                        <li><a href="#about" class="hover:text-white transition">About</a></li>
+                        <li><a href="#contact" class="hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="mb-6 md:mb-0">
+                    <h3 class="font-bold text-white mb-4">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-white transition">Brand Identity</a></li>
+                        <li><a href="#" class="hover:text-white transition">Web Design</a></li>
+                        <li><a href="#" class="hover:text-white transition">UI/UX Design</a></li>
+                        <li><a href="#" class="hover:text-white transition">Print Design</a></li>
+                        <li><a href="#" class="hover:text-white transition">Illustration</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="font-bold text-white mb-4">Newsletter</h3>
+                    <p class="mb-4">Subscribe to our newsletter for design tips and updates.</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Your email" class="bg-gray-800 text-white px-4 py-2 rounded-l-lg focus:outline-none w-full">
+                        <button type="submit" class="gradient-bg text-white px-4 py-2 rounded-r-lg">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p>&copy; 2023 Shani Digital Work. All rights reserved.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-white transition">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition">Terms of Service</a>
+                    <a href="#" class="hover:text-white transition">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" id="back-to-top" class="fixed bottom-6 right-6 w-12 h-12 gradient-bg rounded-full flex items-center justify-center text-white shadow-lg opacity-0 invisible transition-all">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script>
+        // Simple JavaScript for the back-to-top button
+        window.addEventListener('scroll', function() {
+            const backToTopButton = document.getElementById('back-to-top');
+            if (window.pageYOffset > 300) {
+                backToTopButton.style.opacity = '1';
+                backToTopButton.style.visibility = 'visible';
+            } else {
+                backToTopButton.style.opacity = '0';
+                backToTopButton.style.visibility = 'hidden';
+            }
+        });
+        
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        // Mobile menu toggle would go here in a complete implementation
+    </script>
+</body>
+</html>
